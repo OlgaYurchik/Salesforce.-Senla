@@ -1,6 +1,0 @@
-Formula
-YEAR(TODAY())  -   YEAR(Birthdate__c)
-
-Validation Rules
-Tourist__r.Age__c   <=   Trip__r.Minimum_Age__c
-Trip__r.Start_Date__c - TODAY() <= 0
