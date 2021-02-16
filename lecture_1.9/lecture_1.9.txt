@@ -32,4 +32,4 @@ SELECT Tourist__r.Name, Tourist__r.Age__c, Trip__r.Start_Date__c, Trip__r.Name
 //8. выбрать рейсы (дата старта, название) за 2020 год, в которых есть туристы возрастом от 20 до 30 лет и имя туристов начинается с ‘B’(англ).
 SELECT Trip__r.Start_Date__c, Trip__r.Name  
        FROM Flight__c
-       WHERE Tourist__r.Age__c > 20 AND Tourist__r.Age__c < 30
+       WHERE Tourist__r.Age__c > 20 AND Tourist__r.Age__c < 30 AND Tourist__r.Name LIKE 'B%'
