@@ -1,0 +1,4 @@
+//1. Необходимо вывести в дебаг строку “Hello world”.
+
+String greetings = 'Hello world';
+System.debug(greetings);

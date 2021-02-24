@@ -1,0 +1,19 @@
+/*2.Необходимо вывести на экран числа от 1 до 5.
+Вариант1*/
+
+Integer chislo = 1;
+    While (chislo<=5){
+    	System.debug(chislo);
+            //add one
+            chislo++;
+   
+}
+
+/*2.Необходимо вывести на экран числа от 1 до 5.
+Вариант2*/
+
+Integer Chislo = 1;
+
+    for(Chislo = 1; Chislo<=5; Chislo++){
+        System.debug(Chislo); 
+}
