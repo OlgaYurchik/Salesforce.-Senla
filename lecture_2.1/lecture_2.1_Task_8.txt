@@ -1,0 +1,23 @@
+//8. Из созданного массива достать четные и нечетные числа.
+
+List<Integer> allNumbers = new List<Integer>();
+List<Integer> even = new List<Integer>();
+List<Integer> odd = new List<Integer>();
+
+     for(Integer i=1; i<=10; i++){
+     allNumbers.add(i);
+     }
+         System.debug ('allNumbers' + allNumbers);
+
+            for (Integer i=1; i<allNumbers.size(); i++){
+                 if (Math.mod(allNumbers[i],2)==0)
+                {
+                 even.add(allNumbers[i]);
+                } 
+                else{   
+                odd.add(allNumbers[i]);
+    
+               }
+      }
+         System.debug('even' + even);  
+         System.debug('odd' + odd);

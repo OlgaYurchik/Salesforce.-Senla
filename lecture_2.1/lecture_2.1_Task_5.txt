@@ -1,0 +1,13 @@
+//5.Напишите программу, которая суммирует все числа от 1 до введенного вами числа(присвоенного вами переменной).
+
+Integer firstNumber = 1;
+
+Integer secondNumber = 2;
+Integer total = 0;
+
+while(firstNumber<=secondNumber){
+    firstNumber++;
+    total = total + firstNumber;
+}
+    
+    System.debug(total);
