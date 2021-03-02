@@ -6,7 +6,7 @@ Integer secondNumber = 0;
 System.debug('Multiplication table');
 
 while (secondNumber <= 10) {
-	Integer result = firstNumbero * secondNumber;
+	Integer result = firstNumber * secondNumber;
 
 	System.debug(firstNumber + '*' + secondNumber + '=' + result);
 
