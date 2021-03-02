@@ -1,18 +1,17 @@
 /*3. Необходимо вывести на экран числа от 5 до 1.
 Вариант 1*/
 
-Integer chislo = 5;
+Integer number = 5;
 
-    While (chislo>=1){
-        System.debug(chislo);
-        	//extract one
-            chislo--;
-   
+while (number >= 1) {
+	System.debug(number);
+	number--;
+
 }
 /*3. Необходимо вывести на экран числа от 5 до 1.
 Вариант 2*/
-Integer Chislo = 5;
+Integer number = 5;
 
-    for(Chislo = 5; Chislo>=1; Chislo--){
-        System.debug(Chislo); 
+for (number = 5; number >= 1; number--) {
+	System.debug(number);
 }

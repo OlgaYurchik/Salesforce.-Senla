@@ -1,9 +1,9 @@
 String Name = 'London is the capital of Great Britain';
-String[] wordsList = Name.split(' ');
-System.debug(wordsList);
+String[] listOfWords = Name.split(' ');
+System.debug(listOfWords);
 
-for (Integer i=0; i <= wordsList.size(); i++){
-    if (i==0 || i == wordsList.size()-1){
-        System.debug(wordsList[i]);
-    }
+for (Integer i = 0; i <= listOfWords.size(); i++) {
+	if (i == 0 || i == listOfWords.size() - 1) {
+		System.debug(listOfWords[i]);
+	}
 }

@@ -1,15 +1,15 @@
 //4.Необходимо вывести на экран таблицу умножения на 3.
 
-Integer pervoeChislo = 3;
-Integer vtoroeChislo = 0;
+Integer firstNumber = 3;
+Integer secondNumber = 0;
 
 System.debug('Multiplication table');
 
-while (vtoroeChislo<=10){
-    Integer result = pervoeChislo*vtoroeChislo;
-	
-        System.debug(pervoeChislo + '*' + vtoroeChislo + '=' + result);
-		
-	        vtoroeChislo++;
-    
+while (secondNumber <= 10) {
+	Integer result = firstNumbero * secondNumber;
+
+	System.debug(firstNumber + '*' + secondNumber + '=' + result);
+
+	secondNumber++;
+
 }
