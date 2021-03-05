@@ -1,0 +1,13 @@
+//10. Есть строка слов(присвоенная вами переменной): вывести слова, стоящие на нечетных позициях.
+
+String Name = 'London is the capital of Great Britain';
+String[] listOfWords = Name.split(' ');
+
+List < String > oddPosition = new List < String > ();
+
+for (Integer i = 0; i <= listOfWords.size(); i++) {
+	if (Math.mod(i, 2) == 0) {
+		oddPosition.add(listOfWords[i]);
+	}
+}
+System.debug(oddPosition);

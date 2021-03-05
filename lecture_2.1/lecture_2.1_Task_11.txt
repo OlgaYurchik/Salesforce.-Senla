@@ -1,0 +1,15 @@
+//11. Создать массив чисел. Сформировать новый массив, состоящий из индексов четных чисел исходного массива и упорядоченный по возрастанию.
+
+List <Integer> myArrayOfNumbers = new List <Integer>{1,2,3,4,5,6,7,8,9,10};
+List <Integer> indexesOfEvenNumbers = new List<Integer>();
+
+
+for (Integer i = 1; i < myArrayOfNumbers.size(); i++) {
+	
+    if (Math.mod(myArrayOfNumbers[i], 2) == 0) {
+		indexesOfEvenNumbers.add(i); 
+        indexesOfEvenNumbers.sort();
+		
+}
+}
+System.debug(indexesOfEvenNumbers);
