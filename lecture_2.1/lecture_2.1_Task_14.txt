@@ -1,0 +1,7 @@
+Integer n = 10;
+Integer initialNumber = 1;
+
+while (initialNumber <= n) {
+	System.debug(initialNumber++);
+}
+

@@ -1,0 +1,13 @@
+//16. Необходимо написать программу, которая проверяет число на “палиндромность”. Число для проверки объявлено в первой строки скрипта (Long numToCheck = 910019);
+
+Long numToCheck = 910019;
+Double reverse = 0;
+Double i = 0;
+
+while (numToCheck == i) {
+	reverse = Math.mod(numToCheck, 10);
+	i = i * 10 + reverse;
+	numToCheck = numToCheck / 10;
+}
+
+System.debug(numToCheck + ' palindrom');
