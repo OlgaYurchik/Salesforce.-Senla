@@ -1,7 +1,11 @@
-Integer n = 10;
-Integer initialNumber = 1;
+//14. Необходимо написать программу, которая вычисляет простые числа в пределах от 1 до N. Число N – объявлено в первой строки скрипта.
 
-while (initialNumber <= n) {
-	System.debug(initialNumber++);
+List < Integer > simpleNumbers = new List < Integer > ();
+Integer n = 10;
+for (Integer i = 1; i <= n; i++) {
+	if (Math.mod(i, 1) == 0 || Math.mod(i, i) == 0) {
+		simpleNumbers.add(i);
+	}
 }
+System.debug(simpleNumbers);
 
