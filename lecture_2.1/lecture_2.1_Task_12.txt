@@ -1,0 +1,20 @@
+String sentence = 'London is the capital of Great Britain';
+List < String > splittedSentence = sentence.split(' ');          //devide sentence to words
+System.debug(splittedSentence);
+
+List < Integer > numberOfLettersKey = new List < Integer > ();  //count number of letters in each word
+for (Integer i = 0; i < splittedSentence.size(); i++) {
+	numberOfLettersKey.add(splittedSentence.get(i).length());
+}
+System.debug(numberOfLettersKey);
+
+Map < Integer,Integer > myMap = new Map < Integer,Integer > (); //create a Map
+for (Integer numberOfLetters: numberOfLettersKey) {             //loop through List <numberOfLettersKey>
+	if (!myMap.containsKey(numberOfLetters)) {                  //the first time I see an integer
+		myMap.put(numberOfLetters, 1);
+	} else {
+		Integer count = myMap.get(numberOfLetters);             // one more time I see integer
+		myMap.put(numberOfLetters, count + 1);
+	}
+}
+System.debug(myMap);
