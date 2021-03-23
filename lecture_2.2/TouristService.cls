@@ -1,7 +1,7 @@
 public class TouristService {
     
-    public static void markDuplicates(List <Tourist__c> newTourists) {
-        List <Tourist__c> touristsToUpdate = new List<Tourist__c>();
+    public static void markDuplicates(List<Tourist__c> newTourists) {
+        List<Tourist__c> touristsToUpdate = new List<Tourist__c>();
         
         for (Integer i = 0; i < newTourists.size() - 1; i++){
             Tourist__c tourist = newTourists.get(i);

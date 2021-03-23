@@ -1,10 +1,10 @@
 public class NumberUtility {
 
-    public static List <Integer> methodPrimeNumbers(Integer incomingNum) {
+    public static List<Integer> methodPrimeNumbers(Integer incomingNum) {
         if (incomingNum == null){
             return new List <Integer>();
         }
-        List <Integer> primeNumbers = new List <Integer>();
+        List<Integer> primeNumbers = new List<Integer>();
         for (Integer i = 1; i <= incomingNum; i++) {
             if (Math.mod(i, 1) == 0 || Math.mod(i, i) == 0) {
                 primeNumbers.add(i);
@@ -13,10 +13,10 @@ public class NumberUtility {
         return primeNumbers;
     }
 
-    public static List <Integer> methodFibonachi(Integer incomingNum) {
+    public static List<Integer> methodFibonachi(Integer incomingNum) {
         Integer fibonachiNumber = 0;
         Integer previousNumber = 0;
-        List <Integer> fibonachiNum = new List <Integer>();
+        List<Integer> fibonachiNum = new List<Integer>();
 
         while (fibonachiNumber <= incomingNum) {
             if (fibonachiNumber != 0) {
@@ -39,4 +39,4 @@ public class NumberUtility {
             
         return (text == text.reverse());
         }
-    }
+}
