@@ -1,25 +1,24 @@
-public class ExceptionHw {
+public class ExceptionsPlayground {
 	public virtual class BaseException extends Exception {}
 	public class CustomException extends BaseException {}
 
 	public Integer n;
 	public Integer i;
-	public ExceptionHw(Integer myNumber, Integer myNumber1) {
-		this.n = myNumber;
-		this.i = myNumber1;
+	public ExceptionsPlayground(Integer firstIncomingNum, Integer secondIncomingNum) {
+		this.n = firstIncomingNum;
+		this.i = secondIncomingNum;
 	}
 
-	public void method1() {
+	public void generateCustomException() {
 		try {
 			if (i < n) throw new CustomException(' not allowed');
-			System.debug(n);
-
+			
 		} catch(BaseException e) {
 			System.debug(e.getMessage());
 		}
 	}
 
-	public void method2() {
+	public void generateRegularException() {
 		try {
 			Integer
 			var;
@@ -30,7 +29,7 @@ public class ExceptionHw {
 		}
 	}
 
-	public void method3() {
+	public void handleExceptions() {
 		try {
 			if (i > n) throw new CustomException(' not allowed');
 
@@ -44,7 +43,7 @@ public class ExceptionHw {
 		}
 		finally {
 
-}
+        }
 		System.debug('i = ' + i + '; ' + ' n =  ' + n);
 	}
 }
