@@ -19,7 +19,7 @@ public class ExceptionsPlayground {
     
     public void generateRegularException() {
         try {
-            Integer	var;
+            Integer var;
             var = firstNum / secondNum;
             System.debug(var);
         } catch(Exception e) {
@@ -32,7 +32,7 @@ public class ExceptionsPlayground {
             if (secondNum > firstNum) throw new CustomException(' not allowed');
         } catch(BaseException e) {
             System.debug(e.getMessage());
-            Integer	var;
+            Integer var;
             var = firstNum / secondNum;
         } catch(Exception e) {
             System.debug(e.getMessage());
