@@ -17,7 +17,7 @@ public class TouristManager {
     }
     
     public static List<Tourist__c> getTouristsByAge(List<Integer> ages) {
-        if (ages == null && ages.isEmpty()) {
+        if (ages == null || ages.isEmpty()) {
         return new List<Tourist__c>();
         }
         

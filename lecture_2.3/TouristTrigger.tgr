@@ -1,0 +1,27 @@
+trigger TouristTrigger on Tourist__c (before insert) {
+    {
+        Set<String> getTouristName = new Set<String>();
+        Set<String> getTouristEmail = new Set<String>();
+        
+        for(Tourist__c newTourists: [SELECT Name
+                                     FROM Tourist__c])
+            getTouristName.add(newTourists.Name);
+                
+        for(Tourist__c newTourists: [SELECT Tourist_Email__c
+                                     FROM Tourist__c])
+            getTouristEmail.add(newTourists.Tourist_Email__c);
+        
+        for(Tourist__c newTourists: Trigger.new){
+            if(!getTouristName.contains(newTourists.Name) && !getTouristEmail.contains(newTourists.Tourist_Email__c)){
+                getTouristName.add(newTourists.Name);
+                getTouristEmail.add(newTourists.Tourist_Email__c);
+            }
+            else{
+                newTourists.IsDuplicate__c = true;
+                newTourists.Name.addError('Tourist with same name Exists');
+                newTourists.Tourist_Email__c.addError('Tourist with same Email Exists');
+                
+           		}
+        }
+    }
+}
