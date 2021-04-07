@@ -17,9 +17,14 @@ trigger TouristTrigger on Tourist__c (before insert) {
                 TouristEmail.add(newTourist.Tourist_Email__c);
             }
             else{
+<<<<<<< HEAD
                 newTourist.IsDuplicate__c = true;
                 newTourist.Name.addError('Tourist with same name Exists');
                 newTourist.Tourist_Email__c.addError('Tourist with same Email Exists');
+=======
+                newTourists.Name.addError('Tourist with same name Exists');
+                newTourists.Tourist_Email__c.addError('Tourist with same Email Exists');
+>>>>>>> origin/main
                 
             }
         }
